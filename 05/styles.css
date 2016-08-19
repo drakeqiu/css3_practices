@@ -63,10 +63,10 @@ h2 {
 }
 
 .main h2 {
-    color: #E8A0064;
+    color: #E8A064;
     border-bottom: 2px white solid;
     background: url("images/bullet_flower.png") no-repeat;
-    padding: 0 0 2x 80px;
+    padding: 0 0 2px 80px;
 }
 
 .main p {
