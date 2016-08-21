@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Background Images</title>
     <link href="styles.css" rel="stylesheet">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <style>
         body {
             background-image: url("images/bg_page.png");
@@ -21,13 +22,17 @@
         }
         .announcement {
             margin-top: 115px;
-            background: url("images/scroll_top.jpg") no-repeat center top,
-            url("images/scroll_bottom.jpg") no-repeat center bottom,
-            url("images/scroll_middle.jpg") repeat-y center top;
-            padding: 70px 0 60px 0;
+            background: url("images/scroll_middle.jpg") repeat-y center top;
+        }
+        .announcement:before {
+            content: url(images/scroll_top.jpg)
+        }
+        .announcement:after {
+            content: url(images/scroll_bottom.jpg);
+            position: relative;
+            bottom: -5px;
 
         }
-
 
         .main h2 {
             background-image: url(images/underline.png);
@@ -46,6 +51,7 @@
             margin-left: 30px;
             margin-right: 40px;;
         }
+
     </style>
 </head>
 <body>
