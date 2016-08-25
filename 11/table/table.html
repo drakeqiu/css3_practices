@@ -5,7 +5,46 @@
     <title>CSS: The Missing Manual</title>
     <link href="css/main.css" rel="stylesheet">
     <style>
+        .inventory {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .inventory caption {
+            text-align: right;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .inventory td, .inventory th {
+            font-size: 1.1em;
+            border: 1px solid #DDB575;
+            padding: 7px 3px 2px 7px;
+        }
+        .inventory th {
+            text-transform: uppercase;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background: rgb(229, 76, 16);
+            background: -webkit-linear-gradient(rgb(229, 76, 16), rgb(173, 54, 8));
+            background: -moz-linear-gradient(rgb(229, 76, 16), rgb(173, 54, 8));
+            background: -o-linear-gradient(rgb(229, 76, 16), rgb(173, 54, 8));
+            background: linear-gradient(rgb(229, 76, 16), rgb(173, 54, 8));
+            color:white;;
+        }
 
+        .inventory tr:nth-of-type(even) {
+            background-color: rgba(255, 255, 255, .1);
+        }
+
+        .inventory tr:nth-of-type(odd) {
+            background-color: rgba(229, 76, 16, .1);
+
+        }
+
+        #price, #rating {
+            width: 15%;
+        }
     </style>
 </head>
 
